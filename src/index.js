@@ -1,5 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { RoomProvider } from './context';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+	<RoomProvider>
+		<App />
+	</RoomProvider>,
+	document.getElementById('root')
+);

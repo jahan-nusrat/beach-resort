@@ -4,8 +4,8 @@ import Home from './pages/Home';
 import Rooms from './pages/Rooms';
 import SingleRoom from './pages/SingleRoom';
 import Error from './pages/Error';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App () {
 	return (
@@ -20,7 +20,7 @@ function App () {
 						<NavBar />
 						<Rooms />
 					</Route>
-					<Route path="/rooms/:room">
+					<Route path="/rooms/:slug">
 						<NavBar />
 						<SingleRoom />
 					</Route>
